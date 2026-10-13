@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HackHeist 2026 | GDG on Campus MIET</title>
+  <meta name="description" content="HackHeist 2026 - The premier developer hackathon and symposium by GDG on Campus MIET. Build. Break. Solve.">
+  <meta name="keywords" content="HackHeist, GDG on Campus MIET, MIET Meerut, Hackathon 2026, Google Developer Groups, Student Developers">
+  <meta property="og:title" content="HackHeist 2026 | GDG on Campus MIET">
+  <meta property="og:description" content="Build. Break. Solve. Join MIET's flagship developer festival with hackathons, workshops, speaker sessions, and networking.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0d14">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow spots in Google palette -->
+  <div class="ambient-glow glow-blue" aria-hidden="true"></div>
+  <div class="ambient-glow glow-red" aria-hidden="true"></div>
+  <div class="ambient-glow glow-yellow" aria-hidden="true"></div>
+  <div class="ambient-glow glow-green" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="HackHeist Home">
+        <div class="gdg-logo-symbol">
+          <span class="dot dot-blue"></span>
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="brand-text">HACK<span class="text-gradient">HEIST</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-item active">Home</a>
+        <a href="#about" class="nav-item">About</a>
+        <a href="#highlights" class="nav-item">Highlights</a>
+        <a href="#details" class="nav-item">Details</a>
+        <a href="#register" class="nav-mobile-cta">Register Now</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <a href="#register" class="btn btn-sm btn-nav">Register</a>
+        <button class="hamburger-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== SECTION 1: HERO SECTION ==================== -->
+    <section class="section-hero" id="hero">
+      <div class="container hero-container">
+        <!-- Community badge -->
+        <div class="hero-chip animate-fade-up">
+          <span class="chip-dot"></span>
+          <span class="chip-text">GDG on Campus MIET Presents</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="hero-title animate-fade-up delay-1">
+          HACK<span class="text-gradient">HEIST</span>
+          <span class="hero-year">2026</span>
+        </h1>
+
+        <!-- Short Tagline -->
+        <p class="hero-tagline animate-fade-up delay-2">
+          <span class="tag-blue">Build.</span>
+          <span class="tag-red">Break.</span>
+          <span class="tag-green">Solve.</span>
+        </p>
+
+        <!-- Quick Info Pills (Date & Venue) -->
+        <div class="hero-meta animate-fade-up delay-3">
+          <div class="meta-pill">
+            <svg class="meta-icon icon-yellow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span><strong>Date:</strong> HackHeist 2026</span>
+          </div>
+
+          <div class="meta-pill">
+            <svg class="meta-icon icon-red" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span><strong>Venue:</strong> MIET Meerut</span>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="hero-cta-group animate-fade-up delay-4">
+          <a href="#register" class="btn btn-primary btn-lg btn-glow">
+            <span>Register Now</span>
+            <svg class="btn-arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#about" class="btn btn-secondary btn-lg">
+            <span>Explore Event</span>
+          </a>
+        </div>
+
+        <!-- Live Countdown Timer -->
+        <div class="hero-countdown animate-fade-up delay-5" id="countdownCard">
+          <div class="countdown-header">
+            <span class="live-pulse"></span>
+            <span class="countdown-title">HEIST BEGINS IN</span>
+          </div>
+          <div class="countdown-timer">
+            <div class="time-block">
+              <span class="time-number" id="days">24</span>
+              <span class="time-label">Days</span>
+            </div>
+            <div class="time-divider">:</div>
+            <div class="time-block">
+              <span class="time-number" id="hours">08</span>
+              <span class="time-label">Hours</span>
+            </div>
+            <div class="time-divider">:</div>
+            <div class="time-block">
+              <span class="time-number" id="minutes">42</span>
+              <span class="time-label">Minutes</span>
+            </div>
+            <div class="time-divider">:</div>
+            <div class="time-block">
+              <span class="time-number" id="seconds">15</span>
+              <span class="time-label">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 2: ABOUT HACKHEIST ==================== -->
+    <section class="section-about" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-badge badge-blue">Section 02 // The Mission</span>
+          <h2 class="section-title">About HackHeist</h2>
+          <div class="title-bar bar-blue"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Engaging Paragraph Card -->
+          <div class="about-card terminal-card">
+            <div class="terminal-header">
+              <span class="dot-win red"></span>
+              <span class="dot-win yellow"></span>
+              <span class="dot-win green"></span>
+              <span class="terminal-filename">about_hackheist.sh</span>
+            </div>
+            <div class="terminal-body">
+              <p class="about-paragraph">
+                <strong>HackHeist</strong> is the premier developer-centric symposium and hackathon organized by <strong>GDG on Campus MIET</strong>. Designed as an adrenaline-fueled arena of discovery, HackHeist invites student developers, designers, and innovators to learn modern technologies, build impactful solutions, collaborate with peer creators, and connect directly with the tech industry through hands-on workshops, keynotes, and a 24-hour sprint.
+              </p>
+              <p class="about-subtext">
+                Whether you are crafting your first web app or training complex machine learning models, HackHeist gives you the platform, mentors, and resources to push past conventional boundaries and pull off your greatest technical feat.
+              </p>
+              
+              <div class="about-points">
+                <div class="point-item">
+                  <span class="point-check">✓</span>
+                  <span>Collaborative team sprints on real-world problem statements</span>
+                </div>
+                <div class="point-item">
+                  <span class="point-check">✓</span>
+                  <span>Practical learning tracks in Web, AI/ML, Cloud, and Open Source</span>
+                </div>
+                <div class="point-item">
+                  <span class="point-check">✓</span>
+                  <span>Direct interaction with Google Developer Experts and alumni mentors</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Stats / Metrics -->
+          <div class="about-stats">
+            <div class="stat-box stat-blue">
+              <span class="stat-number">24+</span>
+              <span class="stat-title">Hours of Hacking</span>
+              <span class="stat-sub">Non-stop building & ideation</span>
+            </div>
+            <div class="stat-box stat-red">
+              <span class="stat-number">500+</span>
+              <span class="stat-title">Passionate Hackers</span>
+              <span class="stat-sub">Students across institutions</span>
+            </div>
+            <div class="stat-box stat-yellow">
+              <span class="stat-number">₹50K+</span>
+              <span class="stat-title">Prizes & Perks</span>
+              <span class="stat-sub">Cash, bounties & cloud credits</span>
+            </div>
+            <div class="stat-box stat-green">
+              <span class="stat-number">10+</span>
+              <span class="stat-title">Mentors & Judges</span>
+              <span class="stat-sub">Experienced industry veterans</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 3: EVENT HIGHLIGHTS ==================== -->
+    <section class="section-highlights" id="highlights">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge badge-green">Section 03 // What to Expect</span>
+          <h2 class="section-title">Event Highlights</h2>
+          <div class="title-bar bar-green mx-auto"></div>
+          <p class="section-subtitle">Four power-packed pillars built to supercharge your technical journey.</p>
+        </div>
+
+        <div class="highlights-cards-grid">
+          <!-- Card 1: Hackathon (Blue) -->
+          <div class="highlight-card card-blue" data-track="Hackathon">
+            <div class="card-icon-wrap">
+              <span class="card-emoji" role="img" aria-label="Laptop">💻</span>
+            </div>
+            <span class="card-tag">Flagship Track</span>
+            <h3 class="card-heading">Hackathon</h3>
+            <p class="card-tagline">Build and showcase your ideas</p>
+            <p class="card-details">
+              Form your crew, dive into challenging problem tracks, and turn visionary concepts into working prototypes evaluated by senior tech architects.
+            </p>
+            <div class="card-glow-bar"></div>
+          </div>
+
+          <!-- Card 2: Workshop (Red) -->
+          <div class="highlight-card card-red" data-track="Workshop">
+            <div class="card-icon-wrap">
+              <span class="card-emoji" role="img" aria-label="Tools">🛠️</span>
+            </div>
+            <span class="card-tag">Skill Up</span>
+            <h3 class="card-heading">Workshop</h3>
+            <p class="card-tagline">Learn practical development skills</p>
+            <p class="card-details">
+              Get hands-on with cutting-edge tools, modern web APIs, AI developer frameworks, and cloud workflows in guided live coding bootcamps.
+            </p>
+            <div class="card-glow-bar"></div>
+          </div>
+
+          <!-- Card 3: Tech Session (Yellow) -->
+          <div class="highlight-card card-yellow" data-track="Session">
+            <div class="card-icon-wrap">
+              <span class="card-emoji" role="img" aria-label="Microphone">🎤</span>
+            </div>
+            <span class="card-tag">Keynotes</span>
+            <h3 class="card-heading">Tech Session</h3>
+            <p class="card-tagline">Learn from experienced developers</p>
+            <p class="card-details">
+              Gain firsthand industry insights, architectural patterns, system design tips, and career roadmaps directly from experienced tech leaders.
+            </p>
+            <div class="card-glow-bar"></div>
+          </div>
+
+          <!-- Card 4: Networking (Green) -->
+          <div class="highlight-card card-green" data-track="Community">
+            <div class="card-icon-wrap">
+              <span class="card-emoji" role="img" aria-label="Handshake">🤝</span>
+            </div>
+            <span class="card-tag">Connections</span>
+            <h3 class="card-heading">Networking</h3>
+            <p class="card-tagline">Connect with students and the developer community</p>
+            <p class="card-details">
+              Meet future project collaborators, co-founders, and mentor figures. Connect over discussions, fun mini-games, and community exchanges.
+            </p>
+            <div class="card-glow-bar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 4: EVENT DETAILS ==================== -->
+    <section class="section-details" id="details">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-badge badge-yellow">Section 04 // Logistics & Venue</span>
+          <h2 class="section-title">Event Details</h2>
+          <div class="title-bar bar-yellow mx-auto"></div>
+          <p class="section-subtitle">Key logistics designed into an interactive dashboard.</p>
+        </div>
+
+        <div class="bento-details-grid">
+          <!-- Bento 1: Date -->
+          <div class="bento-box bento-date">
+            <div class="bento-top">
+              <span class="bento-badge">CALENDAR</span>
+              <div class="bento-icon icon-blue">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="bento-title">Date</h3>
+            <div class="bento-main-val">HackHeist 2026</div>
+            <p class="bento-desc">Annual flagship edition coming live to MIET campus.</p>
+            <div class="bento-tags">
+              <span class="tag-pill">📅 Spring 2026</span>
+              <span class="tag-pill">⚡ Full Day Event</span>
+            </div>
+          </div>
+
+          <!-- Bento 2: Time -->
+          <div class="bento-box bento-time">
+            <div class="bento-top">
+              <span class="bento-badge">SCHEDULE</span>
+              <div class="bento-icon icon-yellow">
+                <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="bento-title">Time</h3>
+            <div class="bento-main-val">9:00 AM onwards</div>
+            <p class="bento-desc">Early check-in followed by keynote address and kickoff.</p>
+            <div class="schedule-timeline">
+              <div class="sched-step">
+                <span class="time-stamp">09:00 AM</span>
+                <span class="time-act">Reporting & Badge Distribution</span>
+              </div>
+              <div class="sched-step">
+                <span class="time-stamp">10:00 AM</span>
+                <span class="time-act">Opening Ceremony & Problem Tracks</span>
+              </div>
+              <div class="sched-step">
+                <span class="time-stamp">11:00 AM</span>
+                <span class="time-act">Hacking Starts & Workshops</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento 3: Venue (Span across) -->
+          <div class="bento-box bento-venue">
+            <div class="venue-info-side">
+              <div class="bento-top">
+                <span class="bento-badge">LOCATION</span>
+                <div class="bento-icon icon-red">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="bento-title">Venue</h3>
+              <div class="bento-main-val">MIET</div>
+              <p class="venue-full">Meerut Institute of Engineering and Technology</p>
+              <p class="bento-desc">NH-58, Delhi-Roorkee Highway, Baghpat Bypass Road Crossing, Meerut, Uttar Pradesh 250005</p>
+
+              <div class="venue-facility-chips">
+                <span class="chip-item">🏛️ Main Auditorium</span>
+                <span class="chip-item">⚡ High-speed Fiber Wi-Fi</span>
+                <span class="chip-item">🥪 Food & Rest Zones</span>
+              </div>
+            </div>
+
+            <!-- Stylized Campus Radar Card -->
+            <div class="venue-radar-visual" aria-hidden="true">
+              <div class="radar-circle circle-1"></div>
+              <div class="radar-circle circle-2"></div>
+              <div class="radar-circle circle-3"></div>
+              <div class="radar-sweep"></div>
+              <div class="radar-pin">
+                <span class="pin-pulse"></span>
+                <span class="pin-dot"></span>
+              </div>
+              <div class="radar-caption">
+                <strong>MIET Meerut</strong>
+                <span>28.9739° N, 77.6397° E</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECTION 5: FINAL CTA ==================== -->
+    <section class="section-cta" id="register">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-glow-mesh" aria-hidden="true"></div>
+
+          <div class="cta-body">
+            <div class="cta-badge-top">
+              <span class="pulse-green"></span>
+              <span>Registrations Now Open</span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="cta-heading">Ready to HackHeist?</h2>
+            
+            <p class="cta-subtext">
+              Assemble your team, bring your wildest ideas, and experience 24 hours of pure creativity, code, and community. Free registration for all shortlisted participants.
+            </p>
+
+            <!-- Register Now Button -->
+            <div class="cta-actions">
+              <a href="https://forms.gle/HackHeist2026RegistrationPlaceholder" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl btn-glow" id="ctaRegisterBtn">
+                <span>Register Now</span>
+                <svg class="btn-arrow" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#hero" class="btn btn-ghost btn-xl">
+                <span>Back to Top ↑</span>
+              </a>
+            </div>
+
+            <div class="cta-perk-pills">
+              <span>🎒 Official Swag Kits</span>
+              <span>🍕 Food & Energy Drinks</span>
+              <span>📜 Official Certificates</span>
+              <span>🏆 Cash Prizes & Credits</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <div class="gdg-logo-symbol">
+          <span class="dot dot-blue"></span>
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="footer-brand-title">GDG on Campus MIET</span>
+        <span class="footer-batch">Core Team 2026-27</span>
+      </div>
+
+      <div class="footer-center">
+        <p>Built for the Web Development Selection Task</p>
+        <p class="ref-link">Reference inspiration: <a href="https://www.hackheist2.xyz/" target="_blank" rel="noopener noreferrer">hackheist2.xyz</a></p>
+      </div>
+
+      <div class="footer-right">
+        <span class="terminal-footer">HACKHEIST // Build. Break. Solve.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
